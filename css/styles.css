@@ -7,6 +7,7 @@
    --jag-blue: #1a5490;           /* Jefferson Academy Blue */
    --jag-gold: #f0ad4e;           /* Jefferson Academy Gold */
    --jag-accent: #5cb85c;         /* Success/Accent Green */
+   --jag-black: rgb(2, 8, 68);
   
    /* Text Colors */
    --text-dark: #333333;
@@ -38,15 +39,21 @@ body {
 
 /* ===== HEADER STYLES ===== */
 
-
+.logo {
+   width:250px;
+}
 .jumbotron {
    background: linear-gradient(135deg, var(--jag-blue) 0%, #2c5aa0 100%);
    color: var(--text-light);
    margin-bottom: 30px;
    padding: 60px 30px;
 }
-
-
+.quicklinks {
+   margin-left: 40%;
+}
+h2, h3, p {
+   margin-left:30px;
+}
 .jumbotron h1 {
    font-size: 3rem;
    font-weight: bold;
@@ -167,4 +174,95 @@ footer ul {
 footer ul li {
    list-style: none;
    margin-bottom: 8px;
+}
+.endpage {
+   padding-left: 150px;
+}
+/* ===== NAVBAR STYLES ===== */
+
+
+.navbar {
+ background: linear-gradient(135deg, var(--jag-black) 0%, #222222 100%);
+ padding: 0.5rem 1rem;
+}
+
+#classTab {
+   background-color:var(--background-dark);
+}
+
+.navbar-brand {
+ font-size: 1.5rem;
+ font-weight: bold;
+ color: var(--jag-gold) !important;
+}
+
+
+.navbar-brand img {
+ margin-right: 10px;
+}
+
+
+.nav-link {
+ color: var(--text-light) !important;
+ font-weight: 500;
+ margin: 0 10px;
+ transition: color 0.3s ease;
+}
+
+
+.nav-link:hover {
+ color: var(--jag-gold) !important;
+}
+
+
+.navbar-toggler {
+ border-color: var(--jag-gold);
+}
+
+
+body {
+ padding-top: 56px;
+}
+
+
+.jumbotron {
+ margin-top: 0;
+}
+
+.nav-tabs {
+ border-bottom: 2px solid var(--jag-accent);
+ margin-bottom: 20px;
+}
+
+
+.nav-tabs .nav-link {
+ color: var(--text-dark);
+ border: none;
+ font-weight: 600;
+ padding: 10px 20px;
+ transition: all 0.3s ease;
+}
+
+
+.nav-tabs .nav-link:hover {
+ background-color: var(--background-light);
+ color: var(--jag-accent);
+}
+
+
+.nav-tabs .nav-link.active {
+ color: var(--jag-black);
+ background-color: var(--jag-gold);
+ border: none;
+ border-radius: 0;
+}
+
+
+.tab-content {
+ padding: 20px 0;
+}
+
+
+.tab-pane .class-card {
+ margin-bottom: 0;
 }

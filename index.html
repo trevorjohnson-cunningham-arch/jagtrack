@@ -20,29 +20,53 @@
 
 <body>
 
-
-    <header class="jumbotron jumbotron-fluid">
-        <div class="row align-items-center">
-            <div class="col-4">
-                <img src="img/ja-logo.svg" alt="Jefferson Academy Logo" />
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/ja-initials-bLCg4zbA.svg" height="30" width="30" alt="JA Logo" />
+                JagTrack
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#jagtrackNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="jagtrackNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="myclassesnextquarter.html">Next Quarter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ai-chat.html">AI Chat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="theme-toggle">
+                            <span id="theme-icon">☀️</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="col">
-                <h1>JagTrack</h1>
-                <h2>Your Academic Success Hub</h2>
+        </div>
+    </nav>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1>JagTrack</h1>
+                    <h2>Your Academic Success Hub</h2>
+                </div>
             </div>
         </div>
     </header>
 
 
 
-   <div>
-       <h2>My 4 Classes</h2>
-       <h3>Current Quarter</h3>
-       <p>Track all your classes, assignments, and deadlines in one place.</p>
-   </div>
 
-
-    <div class="container">
+    <div class="container d-lg-block d-none">
         <div class="row row-content">
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="class-card">
@@ -78,31 +102,62 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-2">STEM</div>
-            <div class="col-12 col-sm-2">Arts</div>
-            <div class="col-12 col-sm-8">Current Focus: Web Design</div>
+    <div class="container d-lg-none d-block">
+        <ul class="nav nav-tabs" id="classTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="a-block-tab" data-toggle="tab" href="#a-block" role="tab">A Block</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="b-block-tab" data-toggle="tab" href="#b-block" role="tab">B Block</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="c-block-tab" data-toggle="tab" href="#c-block" role="tab">C Block</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="d-block-tab" data-toggle="tab" href="#d-block" role="tab">D Block</a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="classTabContent">
+            <div class="tab-pane fade show active" id="a-block" role="tabpanel">
+                <div class="class-card">
+                    <h4>A Block: Biology Honors</h4>
+                    <h5>8:25 AM - 9:55 AM</h5>
+                    <p>Learning about Genetics and Heredity</p>
+                    <a href="https://jajags.instructure.com/courses/3364" class="btn btn-primary">Go to Canvas →</a>
+                </div>    
+            </div>
+            <div class="tab-pane fade" id="b-block" role="tabpanel">
+                <div class="class-card">
+                    <h4>B Block: Web Design in HTML & CSS</h4>
+                    <h5>10:00 AM - 11:30 AM</h5>
+                    <p>Building modern, responsive websites using HTML, 
+                        CSS, and Bootstrap framework. Creating the JagTrack project!
+                    </p>
+                    <a href="https://jajags.instructure.com/courses/3438" target="_blank" class="btn btn-primary">Go to Canvas →</a>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="c-block" role="tabpanel">
+                <div class="class-card">    
+                    <h4>C Block: English 9 Honors</h4>
+                    <h5>12:15 PM - 1:45 PM</h5>
+                    <p>Learning about rhetorical devices, vocabulary, and Life of Pi.</p>
+                    <a href="https://jajags.instructure.com/courses/3168" class="btn btn-primary">Go to Canvas →</a>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="d-block" role="tabpanel">
+                <div class="class-card">
+                    <h4>D Block: ASL 1</h4>
+                    <h5>1:50 PM - 3:20 PM</h5>
+                    <p>Learning how to speak and understand American Sign Language</p>
+                    <a href="https://jajags.instructure.com/courses/3397" class="btn btn-primary">Go to Canvas →</a>
+                </div>
+            </div>
         </div>
     </div>
+
     <div class="container">
-        <div class="row">
-            <div class="col-4 col-md-3">
-                <h5>Completed</h5>
-                <p>5 assignments done!</p>
-            </div>
-            <div class="col-4 col-md-6">
-                <h5>In Progress</h5>
-                <p>2 assignments in progress</p>
-            </div>
-            <div class="col-4 col-md-3">
-                <h5>Not Started</h5>
-                <p>1 upcoming assignment</p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <h3>Quick Links</h3>
+        <h3 class="quicklinks">Quick Links</h3>
         <div class="row">
             <div class="col-12 col-md-4">
                 <h5>📚 Academic</h5>
@@ -130,14 +185,15 @@
             </div>
         </div>
     </div>
-    <div>
+    
+    <div class="endpage">
        <h2>Study Resources</h2>
        <h3>Your Success Tools</h3>
        <p>Access helpful resources and study guides for all your subjects.</p>
    </div>
 
 
-   <div>
+   <div class="endpage">
        <h2>Calendar & Deadlines</h2>
        <h3>Stay On Track</h3>
        <p>Never miss an assignment or test date again.</p>
